@@ -5,7 +5,7 @@ A Blockchain é uma tecnologia que utiliza um livro-razão imutável e compartil
 Nos jogos de aposta, idealizamos a criação da loteira do jogo do bicho em um smart contract. Considerado como um "jogo de azar", o jogo do bicho consiste em escolher um animal e aguardar o resultado do sorteio para saber qual prêmio o jogador irá ganhar.
 
 
-## Metodologia
+### Metodologia
 A solução proposta para este problema foi desenvolvida no Solidity, e as seguintes etapas foram executadas:
 
 - Recepção e armazenamento da aposta do jogador na Blockchain utilizando o Remix.
