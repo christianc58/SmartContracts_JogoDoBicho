@@ -629,6 +629,13 @@ contract Bet {
     function generateWinner() public isOwner{
         generateWinnerNumber();
     }
+    
+    // Defining a function to generate a random number
+    //function randMod(uint num) internal returns(uint){
+        //num = 1000;
+        //randNonce++; 
+        //return uint(keccak256(abi.encodePacked(block.timestamp, msg.sender, randNonce))) % num;
+    //}
 
     function group(uint256 groupNumber, uint256 number) private returns(bool){
         if (groupNumber == 31) {
