@@ -316,13 +316,13 @@ contract Bet {
             if(group(addressToPlayer[playerAddress].groupSelected, number1) == true) {
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 12x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 12); //should be 12x
                 }
             }
             if((group(addressToPlayer[playerAddress].groupSelected, number2) == true) || (group(addressToPlayer[playerAddress].groupSelected, number3) == true) || (group(addressToPlayer[playerAddress].groupSelected, number4) == true) || (group(addressToPlayer[playerAddress].groupSelected, number5) == true)) {
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 12x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 3); //should be 12x
                 }
             }
         }
@@ -341,7 +341,7 @@ contract Bet {
             if((((group(addressToPlayer[playerAddress].groupSelected, number1) == true)) && ((group(addressToPlayer[playerAddress].duqueSelected, number2))== true)) || (((group(addressToPlayer[playerAddress].groupSelected, number2) == true)) && ((group(addressToPlayer[playerAddress].duqueSelected, number1))== true))){
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 95);
                 }
             } else {
                 if ((group(addressToPlayer[playerAddress].groupSelected, number1) == true) || (group(addressToPlayer[playerAddress].groupSelected, number2) == true) || (group(addressToPlayer[playerAddress].groupSelected, number3) == true) || (group(addressToPlayer[playerAddress].groupSelected, number4) == true) || (group(addressToPlayer[playerAddress].groupSelected, number5) == true)){
@@ -354,7 +354,7 @@ contract Bet {
             if (countDuque == 2) {
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 12);
                 }
             }
         }
@@ -385,7 +385,7 @@ contract Bet {
             ) { 
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 700); 
                 }
             } else {
                 if ((group(addressToPlayer[playerAddress].groupSelected, number1) == true) || (group(addressToPlayer[playerAddress].groupSelected, number2) == true) || (group(addressToPlayer[playerAddress].groupSelected, number3) == true) || (group(addressToPlayer[playerAddress].groupSelected, number4) == true) || (group(addressToPlayer[playerAddress].groupSelected, number5) == true)){
@@ -401,7 +401,7 @@ contract Bet {
             if (countTerno == 3) {
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 42);
                 }
             }
         }
@@ -439,7 +439,7 @@ contract Bet {
             ) { 
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 4000); 
                 }
             } else {
                 if ((group(addressToPlayer[playerAddress].groupSelected, number1) == true) || (group(addressToPlayer[playerAddress].groupSelected, number2) == true) || (group(addressToPlayer[playerAddress].groupSelected, number3) == true) || (group(addressToPlayer[playerAddress].groupSelected, number4) == true) || (group(addressToPlayer[playerAddress].groupSelected, number5) == true)){
@@ -458,7 +458,7 @@ contract Bet {
             if (countQuadra == 4) {
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 500); 
                 }
             }
         }
@@ -493,7 +493,7 @@ contract Bet {
             if (countQuina == 5) {
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 17000);
                 }
             }
         }
@@ -510,7 +510,10 @@ contract Bet {
             uint256 countDezena = 0;
 
             if ((addressToPlayer[playerAddress].dezenaSelected == number1)) {
-                countDezena = countDezena+1;
+                address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
+                    if(payTo != address(0)) {
+                        payTo.transfer(addressToPlayer[playerAddress].amountBet * 50);
+                    }
             }
             if ((addressToPlayer[playerAddress].dezenaSelected == number2)) {
                 countDezena = countDezena+1;
@@ -527,7 +530,7 @@ contract Bet {
             if (countDezena >= 1) {
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 7);
                 }
             }
         }
@@ -544,7 +547,10 @@ contract Bet {
             uint256 countCentena = 0;
 
             if ((addressToPlayer[playerAddress].centenaSelected == number1)) {
-                countCentena = countCentena+1;
+                address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
+                    if(payTo != address(0)) {
+                        payTo.transfer(addressToPlayer[playerAddress].amountBet * 500); 
+                    }
             }
             if ((addressToPlayer[playerAddress].centenaSelected == number2)) {
                 countCentena = countCentena+1;
@@ -561,7 +567,7 @@ contract Bet {
             if (countCentena >= 1) {
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 60); 
                 }
             }
         }
@@ -576,7 +582,7 @@ contract Bet {
             if ((addressToPlayer[playerAddress].numberSelected == number1)) {
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 2); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 5000); 
                 }
             }
             if ((addressToPlayer[playerAddress].numberSelected == number2)) {
@@ -594,7 +600,7 @@ contract Bet {
             if (countMilhar >= 1) {
                 address payable payTo = payable(playerAddress); // verificar se precisa dos dois payable
                 if(payTo != address(0)) {
-                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 1); //should be 600x
+                    payTo.transfer(addressToPlayer[playerAddress].amountBet * 600); 
                 }
             }
         }
