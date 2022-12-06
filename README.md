@@ -1,6 +1,6 @@
 # SmartContracts_JogoDoBicho
 
-A Blockchain  ́e uma tecnologia que utiliza um livro-raz ̃ao imut ́avel e compartilhado
+A Blockchain é uma tecnologia que utiliza um livro-raz ̃ao imut ́avel e compartilhado
 que facilita o processo de registro de transac ̧  ̃oes e de controle de ativos em uma rede
 de neg ́ocios. Ela nasceu com o Bitcoin, no entanto, com o tempo
 comec ̧ou a ser explorada em outras  ́areas.
